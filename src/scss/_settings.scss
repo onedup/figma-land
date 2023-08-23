@@ -128,6 +128,7 @@ a {
   letter-spacing: 0.1px;
   color: var(--color-light);
   background-color: var(--color-picton);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &--thin-text {
     font-size: 16px;
@@ -149,6 +150,11 @@ a {
   &--light-picton {
     background-color: var(--color-light);
     color: var(--color-picton);
+  }
+
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -177,14 +183,34 @@ a {
 }
 
 .link {
+  position: relative;
   font-size: 15px;
   line-height: 180%;
   /* 27/15 */
   letter-spacing: 0.2px;
   color: var(--color-ebony);
 
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-ebony);
+    transition: width 0.3s ease;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+
   &--light {
     color: var(--color-light);
+
+    &::before {
+      background-color: var(--color-light);
+    }
   }
 }
 
@@ -315,7 +341,7 @@ a {
 }
 
 .burger--active .burger__line {
-transform: scale(0);
+  transform: scale(0);
   transition: transform 0.3s ease-in-out;
 }
 

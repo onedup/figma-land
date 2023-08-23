@@ -24,15 +24,7 @@
     margin: 0 auto;
     margin-bottom: 95px;
     padding: 16px 56px;
-    border-radius: 35px;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 33px;
-    /* 150% */
-    letter-spacing: 0.1px;
-    color: var(--color-light);
-    background-color: var(--color-picton);
+  
   }
 
   @include small-tablet {
