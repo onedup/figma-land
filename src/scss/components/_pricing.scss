@@ -42,6 +42,11 @@
   &__btn {
     padding: 18px 88px;
   }
+
+  @include small-tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .card-head {

@@ -30,6 +30,11 @@
   &__btn {
     padding: 16px 47px;
   }
+
+    @include small-tablet {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
 }
 
 .testimonials-item {

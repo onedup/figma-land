@@ -50,4 +50,8 @@
     padding: 17px 140px;
   }
 
+  @include small-tablet {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
 }

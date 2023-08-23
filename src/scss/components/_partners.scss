@@ -26,7 +26,7 @@
       display: block;
       max-width: 218px;
       margin: 0 auto;
-      margin-bottom: 108px;
+      margin-bottom: 60px;
     }
   }
 
@@ -62,5 +62,9 @@
     margin: 0 auto;
     display: block;
     padding: 16px 56px;
+  }
+
+  @include small-tablet {
+    padding-top: 60px;
   }
 }

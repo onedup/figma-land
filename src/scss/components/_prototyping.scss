@@ -35,5 +35,8 @@
     background-color: var(--color-picton);
   }
 
-
+  @include small-tablet {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 }
