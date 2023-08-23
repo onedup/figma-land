@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+@include('partials/head.html')
+
+<body class="page__body">
+  <div class="site-container">
+    <div class="main-background">
+      @include('partials/header.html')
+      @include('partials/hero.html')
+    </div>
+    <main class="main">
+      @include('partials/features.html')
+      @include('partials/prototyping.html')
+      @include('partials/subscribe-section.html')
+      @include('partials/partners.html')
+      @include('partials/testimonials.html')
+      @include('partials/pricing.html')
+      @include('partials/contacts-section.html')
+
+    </main>
+    @include('partials/footer.html')
+    <!-- @include('html/h1.html') пример include -->
+  </div>
+</body>
+
+</html>

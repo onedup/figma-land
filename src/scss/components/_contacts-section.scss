@@ -1,0 +1,119 @@
+.contacts-section {
+  padding-top: 95px;
+  padding-bottom: 85px;
+  background-color: var(--color-ebony);
+
+  &__title {
+    margin-bottom: 27px;
+  }
+
+  &__subsubtitle {
+    margin: 0 auto;
+    margin-bottom: 60px;
+    max-width: 300px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+
+    @include small-tablet {
+      flex-direction: column-reverse;
+    }
+  }
+
+  @include small-tablet {
+    padding: 150px 0;
+  }
+}
+
+.contacts {
+  padding-top: 95px;
+  padding-bottom: 84px;
+
+  @include small-tablet {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0 auto;
+  }
+
+  &--footer {
+    display: block;
+  }
+
+  &__caption {
+    display: block;
+    margin-bottom: 10px;
+    padding-left: 37px;
+    max-width: 242px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    /* 18/12 */
+    letter-spacing: 0.1px;
+    background-image: url('../img/icon-map.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: 26px 32px;
+    color: var(--color-oxford);
+
+    &--light {
+      color: var(--color-light);
+    }
+
+    @include small-tablet {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 37px;
+    max-width: 242px;
+    height: 38px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 150%;
+    /* 18/12 */
+    letter-spacing: 0.1px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    color: var(--color-oxford);
+
+    @include small-tablet {
+      margin-bottom: 0;
+    }
+
+
+    &--light {
+      color: var(--color-light);
+    }
+
+    &--phone {
+      background-image: url('../img/icon-phone.svg');
+      background-size: 21px 34px;
+      background-position: 3px center;
+
+      @include small-tablet {
+        margin-bottom: 30px;
+      }
+    }
+
+    &--mail {
+      background-image: url('../img/icon-mail.svg');
+      background-size: 27px 22px;
+      margin-bottom: 50px;
+
+      @include small-tablet {
+        margin-bottom: 30px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-bottom: 50px;
+    }
+  }
+}

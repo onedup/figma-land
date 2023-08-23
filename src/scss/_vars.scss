@@ -1,0 +1,21 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1360px;
+  --container-offset: 40px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-light: #fff;
+  --color-baltic: #18171D;
+  --color-ebony: #252B42;
+  --color-oxford: #374754;
+  --color-lemonade: #EF2779;
+  --color-picton: #38A3F1;
+
+  @include minidesk {
+    --container-offset: 20px;
+  }
+}
